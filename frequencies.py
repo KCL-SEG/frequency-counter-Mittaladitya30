@@ -11,3 +11,4 @@ def frequencies(items):
         items.append(i)
  for x in items:
      freq[x] = items.count(x)
+ return freq
