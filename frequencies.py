@@ -11,6 +11,3 @@ def frequencies(items):
         items.append(i)
  for x in items:
      freq[x] = items.count(x)
- print(freq)
-
-frequencies([100, '100', 'hello', 100, '100'])
