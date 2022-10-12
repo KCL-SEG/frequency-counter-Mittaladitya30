@@ -2,13 +2,13 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
- freq = {}
+  freq = {}
 
- for i in items:
-     if isinstance(i, int):
-        items.remove(i)
-        i = str(i)
-        items.append(i)
- for x in items:
-     freq[x] = items.count(x)
- return freq
+  for i in range(0, len(items)-1):
+      if isinstance(items[i], int):
+
+         items[i] = str(items[i])
+
+  for x in items:
+      freq[x] = items.count(x)
+  return freq
