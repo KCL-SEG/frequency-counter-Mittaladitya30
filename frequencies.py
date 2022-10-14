@@ -10,7 +10,6 @@ def frequencies(items):
           items.remove(i)
           i = str(i)
           items.append(i)
-  print(items)
 
   for x in items:
       if x not in freq.keys():
@@ -18,6 +17,4 @@ def frequencies(items):
       else:
           freq[x] += 1
 
-  print(freq)
-
-frequencies([100, 'Hello', '100', '100', 100])
+  return freq;
