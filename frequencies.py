@@ -3,12 +3,21 @@
 
 def frequencies(items):
   freq = {}
+  count = 0
 
-  for i in range(0, len(items)-1):
-      if isinstance(items[i], int):
-
-         items[i] = str(items[i])
+  for i in items:
+      if isinstance(i, int):
+          items.remove(i)
+          i = str(i)
+          items.append(i)
+  print(items)
 
   for x in items:
-      freq[x] = items.count(x)
-  return freq
+      if x not in freq.keys():
+          freq[x] = 1
+      else:
+          freq[x] += 1
+
+  print(freq)
+
+frequencies([100, 'Hello', '100', '100', 100])
