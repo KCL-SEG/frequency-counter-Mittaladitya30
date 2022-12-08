@@ -17,8 +17,8 @@ def frequencies(items):
 
 
   for x in items:
-      if x not in freq.keys():
-          freq[x] = 1
+      if x not in frequencies.keys():
+          frequencies[x] = 1
       else:
-          freq[x] += 1
+          frequencies[x] += 1
   return frequencies
